@@ -35,3 +35,6 @@ https://www.kaggle.com/code/alfredkondoro/pytorch-mnist-vae
 https://www.kaggle.com/code/fazilbtopal/variantional-autoencoders-vae
 
 https://www.kaggle.com/code/alincijov/cnn-vae-handwritten-math-symbols-tf
+
+L'une des finalités serait la _feature extraction_ , à cet égard, voir par exemple : https://arxiv.org/pdf/2204.07924
+
