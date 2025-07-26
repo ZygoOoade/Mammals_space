@@ -10,7 +10,10 @@ https://stylegan-nada.github.io/
 
 Voir aussi l'article de [NITZAN et al. (2020) intitulé _Face Identity Disentanglement via Latent Space Mapping_](https://arxiv.org/abs/2005.07728)
 
-A partir d'un modèle de classification des races de chiens, il devrait être possible d'entraîner un modèle GAN à générer des chiens d'une race spécifique (e.g. golden retriever, teckel, etc.)
+Ce qu'il y a d'intéressant, dans cet article, tient à ce qu'ils parviennent à séparer l'identité du visage (les propriétés qui restent fixes) des attributs qui peuvent être variables. Cela permet ensuite, par exemple, de modifier les attributs variables (par exemple le sourire, la position du visage) sans toucher aux propriétés stables qui constituent l'identité du visage.
+
+Le projet consiste à entraîner un réseau de mapping (M) pour exploiter l'espace latent d'un générateur StyleGAN pré-entraîné et gelé. Le système apprend à combiner la race d'une image source I_id avec la pose d'une autre image I_attr. La préservation de la race est assurée par une perte d'identité calculée à l'aide d'un classifieur de races pré-entraîné et gelé (frozen), permettant ainsi un transfert d'attributs contrôlé.
+
 
 Quelques ensemble de photos de mammifères.
 
